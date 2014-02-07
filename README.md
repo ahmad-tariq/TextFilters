@@ -1,17 +1,17 @@
 TextFilters
 ===========
 Projekt edukacyjny który zakłada pogrupowanie następujących poleceń:
-1. Zliczanie znaków, słów i wierszy
-2. Numerowanie wierszy pliku
-3. Usuwanie pustych wierszy
-4. Zamiana małych liter na duże
-5. Zamiana dużych liter na małe
-6. Zamiana znaków tabulacji na określoną liczbę spacji
-7. Zliczanie krotności wystąpienia podanego ciągu znaków
-8. Zamiana podanego ciągu znaków na inny podany ciąg
-9. Usunięcie z pliku podanego ciągu znaków, wypisanie wierszy (oraz ich numerów)zawierających podany ciąg znaków
-10. Wypisanie n początkowych wierszy pliku
-11. Wypisanie n końcowych wierszy pliku
+- Zliczanie znaków, słów i wierszy
+- Numerowanie wierszy pliku
+- Usuwanie pustych wierszy
+- Zamiana małych liter na duże
+- Zamiana dużych liter na małe
+- Zamiana znaków tabulacji na określoną liczbę spacji
+- Zliczanie krotności wystąpienia podanego ciągu znaków
+- Zamiana podanego ciągu znaków na inny podany ciąg
+- Usunięcie z pliku podanego ciągu znaków, wypisanie wierszy (oraz ich numerów)zawierających podany ciąg znaków
+- Wypisanie n początkowych wierszy pliku
+- Wypisanie n końcowych wierszy pliku
 
 Polecenia pogrupowałem w 3 grupy:
 --------------
@@ -52,39 +52,39 @@ firstlinesview
 Klasy które rozszerzając byty abstrakcyjne, przedefiniowują metody z nich. Dla każdego z typów stworzona jest oddzielna, prosta fabryka.
 Więc jeśli chcemy użyć jakiegoś filtra dla pliku to może to wyglądać tak:
 	
-#include <iostream>
-#include <fstream>
-#include <string>
-#define FILE "file.txt"
-#include "include\filterfactory.h"
-#include "include\counterfactory.h"
-#include "include\viewfactory.h"
-using namespace std;
+	#include <iostream>
+	#include <fstream>
+	#include <string>
+	#define FILE "file.txt"
+	#include "include\filterfactory.h"
+	#include "include\counterfactory.h"
+	#include "include\viewfactory.h"
+	using namespace std;
 
-int main()
-{
-    ifstream source;
-    source.open(FILE);
+	int main()
+	{
+		ifstream source;
+		source.open(FILE);
 
-    FilterFactory* factory = new FilterFactory();
-    Filter* f1 = factory->getFilter("replace_string");
-    f1->run(source);
-    f1->apply();
+		FilterFactory* factory = new FilterFactory();
+		Filter* f1 = factory->getFilter("replace_string");
+		f1->run(source);
+		f1->apply();
 
-	//OR.. 
-	
-    CounterFactory* cFactory = new CounterFactory();
-    Counter* c1 = cFactory->getCounter("string_counter");
-    cout<<"Wyrazen w pliku: "<< c1->getCount(source);
+		//OR.. 
+		
+		CounterFactory* cFactory = new CounterFactory();
+		Counter* c1 = cFactory->getCounter("string_counter");
+		cout<<"Wyrazen w pliku: "<< c1->getCount(source);
 
-	//OR..
+		//OR..
 
-    ViewFactory* vFactory = new ViewFactory();
-    View* v1 = vFactory->getView("last_lines");
-    cout<<v1->getView(source);
+		ViewFactory* vFactory = new ViewFactory();
+		View* v1 = vFactory->getView("last_lines");
+		cout<<v1->getView(source);
 
-    source.close();
+		source.close();
 
-    return 0;
-}
+		return 0;
+	}
 	
