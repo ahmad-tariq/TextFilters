@@ -88,4 +88,4 @@ Więc jeśli chcemy użyć jakiegoś filtra dla pliku to może to wyglądać tak
 		return 0;
 	}
 
-So.. If we want to use some filters one after the other we should make it with pattern architecture - output from first filter is input to other filter.
+So.. If we want to use some filters one after the other we should make it with pattern (piped) architecture - output from first filter is input to other filter.
