@@ -1,44 +1,44 @@
 TextFilters
 ===========
 Projekt edukacyjny który zakłada pogrupowanie następujących poleceń:
-- 1.Zliczanie znaków, słów i wierszy
-- 2.Numerowanie wierszy pliku
-- 3.Usuwanie pustych wierszy
-- 4.Zamiana małych liter na duże
-- 5.Zamiana dużych liter na małe
-- 6.Zamiana znaków tabulacji na określoną liczbę spacji
-- 7.Zliczanie krotności wystąpienia podanego ciągu znaków
-- 8.Zamiana podanego ciągu znaków na inny podany ciąg
-- 9.Usunięcie z pliku podanego ciągu znaków, wypisanie wierszy (oraz ich numerów)zawierających podany ciąg znaków
-- 10.Wypisanie n początkowych wierszy pliku
-- 11.Wypisanie n końcowych wierszy pliku
+1. Zliczanie znaków, słów i wierszy
+2. Numerowanie wierszy pliku
+3. Usuwanie pustych wierszy
+4. Zamiana małych liter na duże
+5. Zamiana dużych liter na małe
+6. Zamiana znaków tabulacji na określoną liczbę spacji
+7. Zliczanie krotności wystąpienia podanego ciągu znaków
+8. Zamiana podanego ciągu znaków na inny podany ciąg
+9. Usunięcie z pliku podanego ciągu znaków, wypisanie wierszy (oraz ich numerów)zawierających podany ciąg znaków
+10. Wypisanie n początkowych wierszy pliku
+11. Wypisanie n końcowych wierszy pliku
 
 Polecenia pogrupowałem w 3 grupy:
 --------------
--Views
--Filters
--Counters
+- Views
+- Filters
+- Counters
 
 Views:
 --------------
--Wypisanie n początkowych wierszy pliku
--Wypisanie n końcowych wierszy pliku
+- Wypisanie n początkowych wierszy pliku
+- Wypisanie n końcowych wierszy pliku
 
 
 Filters:
 --------------
--Numerowanie wierszy pliku
--Usuwanie pustych wierszy
--Zamiana małych liter na duże
--Zamiana dużych liter na małe
--Zamiana znaków tabulacji na określoną liczbę spacji
--Zamiana podanego ciągu znaków na inny podany ciąg
--Usunięcie z pliku podanego ciągu znaków, wypisanie wierszy (oraz ich numerów)zawierających podany ciąg znaków
+- Numerowanie wierszy pliku
+- Usuwanie pustych wierszy
+- Zamiana małych liter na duże
+- Zamiana dużych liter na małe
+- Zamiana znaków tabulacji na określoną liczbę spacji
+- Zamiana podanego ciągu znaków na inny podany ciąg
+- Usunięcie z pliku podanego ciągu znaków, wypisanie wierszy (oraz ich numerów)zawierających podany ciąg znaków
 
 Counters:
 --------------
-Zliczanie znaków, słów i wierszy
-Zliczanie krotności wystąpienia podanego ciągu znaków
+- Zliczanie znaków, słów i wierszy
+- Zliczanie krotności wystąpienia podanego ciągu znaków
 
 Architektura i zamysł.
 --------------
