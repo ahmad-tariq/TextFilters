@@ -49,7 +49,7 @@ linescounter
 removestringfilter
 firstlinesview
 
-Klasy które rozszerzając byty abstrakcyjne, przedefiniowują metody z nich. Dla każdego z typów stworzona jest oddzielna, prosta fabryka.
+Klasy które rozszerzają byty abstrakcyjne, przedefiniowują ich metody. Dla każdego z typów stworzona jest oddzielna, prosta fabryka.
 Więc jeśli chcemy użyć jakiegoś filtra dla pliku to może to wyglądać tak:
 	
 	#include <iostream>
